@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/**
+ * TAILWIND v4.1 DARK MODE CONFIGURATION
+ * This directive is mandatory in v4.1 to enable class-based manual toggling.
+ * It ensures 'dark:' utility classes trigger when the .dark class is on the <html> element.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-brand-primary: #0f172a;
+    --color-brand-accent: #3b82f6;
+
+    /* Semantic variables for adaptive backgrounds and text */
+    --color-app-bg: #f8fafc; /* slate-50 */
+    --color-app-text: #0f172a; /* slate-900 */
+}
+
+/* Update theme variables when the .dark class is applied to the document root */
+.dark {
+    --color-app-bg: #020617; /* slate-950 */
+    --color-app-text: #f1f5f9; /* slate-100 */
+}
+
+@layer base {
+    body {
+        background-color: var(--color-app-bg);
+        color: var(--color-app-text);
+        /* Transition ensures the theme shift is smooth */
+        @apply font-sans antialiased transition-colors duration-300;
+    }
+}
