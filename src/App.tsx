@@ -103,9 +103,9 @@ export const App: React.FC = () => {
             Stock exchange opening hours from your selected perspective.
           </p>
 
-          <div className="mt-6 h-22.5 w-full max-w-182 mx-auto bg-slate-200 dark:bg-slate-800 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500">
-            Advertisement Placeholder (728x90)
-          </div>
+          {/*<div className="mt-6 w-full max-w-[728px] h-[90px] mx-auto bg-slate-200 dark:bg-slate-800 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center text-slate-400 dark:text-slate-500">*/}
+          {/*  Advertisement placeholder (728x90)*/}
+          {/*</div>*/}
         </header>
 
         <main className="rounded-xl bg-white dark:bg-slate-900 shadow-xl ring-1 ring-slate-200 dark:ring-slate-800 overflow-hidden transition-colors">
@@ -126,7 +126,7 @@ export const App: React.FC = () => {
                 className="w-full rounded-lg border-slate-300 dark:border-slate-700 py-2.5 pl-3 shadow-sm focus:border-blue-500 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 sm:text-sm"
               >
                 <optgroup
-                  label="Relative Exchange Time"
+                  label="Relative exchange time"
                   className="dark:bg-slate-800"
                 >
                   {EXCHANGE_RELATIVE_OPTIONS.map((opt) => (
@@ -136,7 +136,7 @@ export const App: React.FC = () => {
                   ))}
                 </optgroup>
                 <optgroup
-                  label="UTC Standard Time Zones"
+                  label="UTC standard time zones"
                   className="dark:bg-slate-800"
                 >
                   {UTC_STANDARD_OPTIONS.map((opt) => (
@@ -146,7 +146,7 @@ export const App: React.FC = () => {
                   ))}
                 </optgroup>
                 <optgroup
-                  label="World Capital Time Zones"
+                  label="World capital time zones"
                   className="dark:bg-slate-800"
                 >
                   {WORLD_CAPITAL_OPTIONS.map((opt) => (
