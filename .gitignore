@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+/coverage/
+/test-results/
+
+# Production build artifacts
+/dist/
+/dist-ssr/
+/build/
+*.out
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# Editor specifics
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.sw?
+
+# Vite / build cache
+.vite/
+.turbo/
